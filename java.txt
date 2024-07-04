@@ -1,0 +1,75 @@
+access modifiers:
+
+private-within class
+default-within class within package
+protected-within class within package outside package by subclass only
+public-within class within package outside package by subclass only outside package
+
+getters and setters:
+
+get: to return the value
+set: to modify the value
+
+this: this keyword is used to refer the object
+
+getters and setters are used to protect your data when creating classes
+getter method return its value
+setter method updates its value
+
+four pillars in oops:
+
+1. Encapsulation
+2. Inheritance
+3. Abstraction
+4. Polymorphism
+
+encapsulation- wrapping up of data & methods under a single unit. It also implements data hiding
+
+data=> properties
+methods=> functions
+
+constructors:
+it is a special method which is invoked automatically at the time of object creation
+it has the same name as class or structure
+it don't have a return type(not even void)
+constructors are oly called once at object creation
+memory allocation happens when constructor is called
+
+types of constructors:
+
+non parameterized
+
+parameterized
+
+copy constructor
+
+
+
+------------------
+
+SELECT name FROM Employee AS e JOIN Employee AS ep ON e.id = ep.managerId GROUP BY e.name, e.id HAVING COUNT(ep.id) >= 5;
+
+
+destructors we don't use in java because our java garbage collector makes that easy for us
+
+inheritance is when properties and methods of base class are passed on to a derived class
+
+types of Inheritance:
+
+single level inheritance:
+one base class->one derived class
+
+multi level inheritance:
+base class->derived class->derived class
+color                legs
+animal(eat,breathe)->mammals(legs)->dog(breed)
+
+Hierarchial Inheritance:
+one base class-2 derived classes
+
+
+Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+
+
+
+

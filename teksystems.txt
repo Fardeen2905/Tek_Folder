@@ -1,0 +1,40 @@
+FreeCodeCamp.org: Known for their comprehensive and in-depth tutorials, they have several videos on C# that cover the basics to advanced topics.
+Programming with Mosh: Mosh Hamedani is a highly respected instructor who offers clear and concise tutorials on C#, among other programming languages.
+Brackeys: Although more focused on game development with Unity, Brackeys offers excellent C# tutorials for those interested in using C# for game development.
+Derek Banas: His "Learn C# in One Video" is quite popular and provides a good overview of the language.
+CodeMonkey:Another great channel for game developers, CodeMonkey focuses on Unity and C# tutorials.
+
+---------------------------------
+
+    Console.WriteLine("My name is Fardeen & I'm 23 years old. <Press space to continue>");
+        Console.ReadKey();
+        Console.WriteLine("\nMy favourite color is purple... Very masculine.");
+        Console.ReadKey();
+
+----------------------------------
+
+ int num01;
+      int num02;
+      
+      Console.Write("Type a number to be multiplied: ");
+      num01 = Convert.ToInt32(Console.ReadLine());
+      Console.Write("Type another number:");
+      num02 = Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine("The result is " + num01 * num02);
+      Console.ReadKey();
+
+-----------------------------
+
+attendance 
+hr one personal details
+download all payslips 16
+grey hr
+letter-obligation letter
+signature - 
+clearence -
+
+finance it iteam 
+
+resignation acceptance letter
+letter 
+
