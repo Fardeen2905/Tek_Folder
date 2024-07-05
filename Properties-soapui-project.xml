@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="ff719849-67ae-490a-a902-a4d315248f13" activeEnvironment="Default" name="Properties" resourceRoot="" soapui-version="5.7.2" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="d6c3b572-f16e-48ec-9258-17360efe3331" wsaVersion="NONE" name="EmployeeManagementServiceSoap12Binding" type="wsdl" bindingName="{http://sample.com/reservation/guest}EmployeeManagementServiceSoap12Binding" soapVersion="1_2" anonymous="optional" definition="http://localhost:8080/axis2/services/EmployeeManagementService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint></con:endpoints><con:operation id="1b88ff2b-82c5-444d-9e0e-f75a673db08c" isOneWay="false" action="urn:addEmployee" name="addEmployee" bindingOperationName="addEmployee" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="deba008b-5f1f-4427-bb8e-7f974975ef37" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <typ:addEmployee>\r
+         <!--Optional:-->\r
+         <typ:name>?</typ:name>\r
+         <!--Optional:-->\r
+         <typ:id>?</typ:id>\r
+         <!--Optional:-->\r
+         <typ:Department>?</typ:Department>\r
+         <!--Optional:-->\r
+         <typ:age>?</typ:age>\r
+      </typ:addEmployee>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:addEmployee"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="1a926113-abb0-45cf-bd62-2a4d98ffe654" isOneWay="false" action="urn:deleteEmployee" name="deleteEmployee" bindingOperationName="deleteEmployee" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9df77b8a-c0d0-420e-9aca-a4a6dcacdc99" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <typ:deleteEmployee>\r
+         <!--Optional:-->\r
+         <typ:employeeName>?</typ:employeeName>\r
+      </typ:deleteEmployee>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:deleteEmployee"/></con:call></con:operation><con:operation id="d4038d23-0bff-493b-b69d-05234739e8a8" isOneWay="false" action="urn:getEmployeeDetails" name="getEmployeeDetails" bindingOperationName="getEmployeeDetails" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cd5a5747-ecf2-4bf2-8e0a-a9aba6b82401" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <typ:getEmployeeDetails>\r
+         <!--Optional:-->\r
+         <typ:employeeName>?</typ:employeeName>\r
+      </typ:getEmployeeDetails>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getEmployeeDetails"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="3674021f-f0a4-4064-9b0e-2b83522a5c32" wsaVersion="NONE" name="EmployeeManagementServiceSoap11Binding" type="wsdl" bindingName="{http://sample.com/reservation/guest}EmployeeManagementServiceSoap11Binding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/axis2/services/EmployeeManagementService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/axis2/services/EmployeeManagementService?wsdl"><con:part><con:url>http://localhost:8080/axis2/services/EmployeeManagementService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://sample.com/reservation/guest" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://sample.com/reservation/guest/types" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://sample.com/reservation/guest" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ax21="http://exception.reservation.sample.com/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:documentation>EmployeeManagementService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://exception.reservation.sample.com/xsd">
+      <xs:complexType name="EmployeeManagementException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://sample.com/reservation/guest/types" xmlns:ax22="http://exception.reservation.sample.com/xsd">
+      <xs:import namespace="http://exception.reservation.sample.com/xsd"/>
+      <xs:element name="EmployeeManagementServiceEmployeeManagementException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="EmployeeManagementException" nillable="true" type="ax22:EmployeeManagementException"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addEmployee">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="age" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addEmployeeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="deleteEmployee">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="employeeName" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getEmployeeDetails">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="employeeName" nillable="true" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getEmployeeDetailsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ns:Employee"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="Employee">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="age" type="xs:int"/>
+          <xs:element minOccurs="0" name="department" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="id" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getEmployeeDetailsRequest">
+    <wsdl:part name="parameters" element="ns:getEmployeeDetails"/>
+  </wsdl:message>
+  <wsdl:message name="getEmployeeDetailsResponse">
+    <wsdl:part name="parameters" element="ns:getEmployeeDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="EmployeeManagementServiceEmployeeManagementException">
+    <wsdl:part name="parameters" element="ns:EmployeeManagementServiceEmployeeManagementException"/>
+  </wsdl:message>
+  <wsdl:message name="deleteEmployeeRequest">
+    <wsdl:part name="parameters" element="ns:deleteEmployee"/>
+  </wsdl:message>
+  <wsdl:message name="addEmployeeRequest">
+    <wsdl:part name="parameters" element="ns:addEmployee"/>
+  </wsdl:message>
+  <wsdl:message name="addEmployeeResponse">
+    <wsdl:part name="parameters" element="ns:addEmployeeResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="EmployeeManagementServicePortType">
+    <wsdl:operation name="getEmployeeDetails">
+      <wsdl:input message="tns:getEmployeeDetailsRequest" wsaw:Action="urn:getEmployeeDetails"/>
+      <wsdl:output message="tns:getEmployeeDetailsResponse" wsaw:Action="urn:getEmployeeDetailsResponse"/>
+      <wsdl:fault message="tns:EmployeeManagementServiceEmployeeManagementException" name="EmployeeManagementServiceEmployeeManagementException" wsaw:Action="urn:getEmployeeDetailsEmployeeManagementServiceEmployeeManagementException"/>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployee">
+      <wsdl:input message="tns:deleteEmployeeRequest" wsaw:Action="urn:deleteEmployee"/>
+      <wsdl:fault message="tns:EmployeeManagementServiceEmployeeManagementException" name="EmployeeManagementServiceEmployeeManagementException" wsaw:Action="urn:deleteEmployeeEmployeeManagementServiceEmployeeManagementException"/>
+    </wsdl:operation>
+    <wsdl:operation name="addEmployee">
+      <wsdl:input message="tns:addEmployeeRequest" wsaw:Action="urn:addEmployee"/>
+      <wsdl:output message="tns:addEmployeeResponse" wsaw:Action="urn:addEmployeeResponse"/>
+      <wsdl:fault message="tns:EmployeeManagementServiceEmployeeManagementException" name="EmployeeManagementServiceEmployeeManagementException" wsaw:Action="urn:addEmployeeEmployeeManagementServiceEmployeeManagementException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmployeeManagementServiceSoap11Binding" type="tns:EmployeeManagementServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getEmployeeDetails">
+      <soap:operation soapAction="urn:getEmployeeDetails" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="EmployeeManagementServiceEmployeeManagementException">
+        <soap:fault use="literal" name="EmployeeManagementServiceEmployeeManagementException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployee">
+      <soap:operation soapAction="urn:deleteEmployee" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="EmployeeManagementServiceEmployeeManagementException">
+        <soap:fault use="literal" name="EmployeeManagementServiceEmployeeManagementException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addEmployee">
+      <soap:operation soapAction="urn:addEmployee" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="EmployeeManagementServiceEmployeeManagementException">
+        <soap:fault use="literal" name="EmployeeManagementServiceEmployeeManagementException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmployeeManagementServiceSoap12Binding" type="tns:EmployeeManagementServicePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getEmployeeDetails">
+      <soap12:operation soapAction="urn:getEmployeeDetails" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="EmployeeManagementServiceEmployeeManagementException">
+        <soap12:fault use="literal" name="EmployeeManagementServiceEmployeeManagementException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployee">
+      <soap12:operation soapAction="urn:deleteEmployee" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:fault name="EmployeeManagementServiceEmployeeManagementException">
+        <soap12:fault use="literal" name="EmployeeManagementServiceEmployeeManagementException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="addEmployee">
+      <soap12:operation soapAction="urn:addEmployee" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="EmployeeManagementServiceEmployeeManagementException">
+        <soap12:fault use="literal" name="EmployeeManagementServiceEmployeeManagementException"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmployeeManagementServiceHttpBinding" type="tns:EmployeeManagementServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getEmployeeDetails">
+      <http:operation location="getEmployeeDetails"/>
+      <wsdl:input>
+        <mime:content type="application/xml" part="parameters"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="application/xml" part="parameters"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployee">
+      <http:operation location="deleteEmployee"/>
+      <wsdl:input>
+        <mime:content type="application/xml" part="parameters"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="addEmployee">
+      <http:operation location="addEmployee"/>
+      <wsdl:input>
+        <mime:content type="application/xml" part="parameters"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="application/xml" part="parameters"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmployeeManagementService">
+    <wsdl:port name="EmployeeManagementServiceHttpSoap11Endpoint" binding="tns:EmployeeManagementServiceSoap11Binding">
+      <soap:address location="http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap11Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="EmployeeManagementServiceHttpSoap12Endpoint" binding="tns:EmployeeManagementServiceSoap12Binding">
+      <soap12:address location="http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/"/>
+    </wsdl:port>
+    <wsdl:port name="EmployeeManagementServiceHttpEndpoint" binding="tns:EmployeeManagementServiceHttpBinding">
+      <http:address location="http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpEndpoint/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap11Endpoint/</con:endpoint></con:endpoints><con:operation id="08d73e77-c3a7-41af-9a96-7ccdc1416bc7" isOneWay="false" action="urn:addEmployee" name="addEmployee" bindingOperationName="addEmployee" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="48b48c31-c05b-42e1-a899-a05841e38bfe" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap11Endpoint/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <typ:addEmployee>\r
+         <!--Optional:-->\r
+         <typ:name>?</typ:name>\r
+         <!--Optional:-->\r
+         <typ:id>?</typ:id>\r
+         <!--Optional:-->\r
+         <typ:Department>?</typ:Department>\r
+         <!--Optional:-->\r
+         <typ:age>?</typ:age>\r
+      </typ:addEmployee>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:addEmployee"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="6b986653-5905-4120-9077-6278c371c553" isOneWay="false" action="urn:deleteEmployee" name="deleteEmployee" bindingOperationName="deleteEmployee" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0ed652be-f9dc-4449-a885-80cb7851010c" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap11Endpoint/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <typ:deleteEmployee>\r
+         <!--Optional:-->\r
+         <typ:employeeName>Jim</typ:employeeName>\r
+      </typ:deleteEmployee>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:deleteEmployee"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="478ddfd9-4c54-4467-a158-348862eafb57" isOneWay="false" action="urn:getEmployeeDetails" name="getEmployeeDetails" bindingOperationName="getEmployeeDetails" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fd927f1c-4243-419e-816a-1eeee2480c42" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap11Endpoint/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <typ:getEmployeeDetails>\r
+         <!--Optional:-->\r
+         <typ:employeeName>?</typ:employeeName>\r
+      </typ:getEmployeeDetails>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:getEmployeeDetails"/></con:call></con:operation></con:interface><con:testSuite id="ece4fd4f-b523-4b87-8c5d-63f2728a0e11" name="Testing"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="cca76d01-8637-41f9-82c3-0f1a16a3459c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="E2E" searchProperties="true"><con:settings/><con:testStep type="request" id="bccffa7f-e7c3-4cdd-9a43-b4c4ca8d36ad" name="addEmployee"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EmployeeManagementServiceSoap12Binding</con:interface><con:operation>addEmployee</con:operation><con:request name="addEmployee" id="dab1e99d-dc37-43d2-948b-2b48069ca9d6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <typ:addEmployee>\r
+         <!--Optional:-->\r
+         <typ:name>${#TestSuite#Name}</typ:name>\r
+         <!--Optional:-->\r
+         <typ:id>${#Project#id}</typ:id>\r
+         <!--Optional:-->\r
+         <typ:Department>${amrenaming#Department}</typ:Department>\r
+         <!--Optional:-->\r
+         <typ:age>${#TestCase#age}</typ:age>\r
+      </typ:addEmployee>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:addEmployee" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="amrenaming" id="e668a125-b98b-4f44-b690-3a29287e9d02"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Department</con:name><con:value>IT</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" id="7c0cc436-8842-4335-90c5-f9af02b3e78f" name="getEmployeeDetails"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EmployeeManagementServiceSoap12Binding</con:interface><con:operation>getEmployeeDetails</con:operation><con:request name="getEmployeeDetails" id="67bf695e-5486-4284-b5d9-a670f0dee50d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <typ:getEmployeeDetails>\r
+         <!--Optional:-->\r
+         <typ:employeeName>${addEmployee#Request#//typ:addEmployee/typ:name/text()}</typ:employeeName>\r
+      </typ:getEmployeeDetails>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:getEmployeeDetails" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="74a68f65-0a1e-4c11-bc62-e01a68073a9a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>transfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getEmployeeDetails</con:sourceStep><con:sourcePath>declare namespace ns='http://sample.com/reservation/guest/types';
+//ns:getEmployeeDetailsResponse/ns:return/ns:name/text()
+
+</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>deleteEmployee</con:targetStep><con:targetPath>declare namespace typ='http://sample.com/reservation/guest/types';
+//typ:deleteEmployee/typ:employeeName</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="f28fd0a9-8908-4c20-b534-ed2dde34c236" name="deleteEmployee"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EmployeeManagementServiceSoap12Binding</con:interface><con:operation>deleteEmployee</con:operation><con:request name="deleteEmployee" id="1422c8f7-bf61-4725-ba84-0ab4321ac2de"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">
+   <soap:Header/>
+   <soap:Body>
+      <typ:deleteEmployee>
+         <!--Optional:-->
+         <typ:employeeName>Jim</typ:employeeName>
+      </typ:deleteEmployee>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:deleteEmployee" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties><con:property><con:name>age</con:name><con:value>22</con:value></con:property></con:properties></con:testCase><con:testCase id="58273ccf-5e03-4c4c-a853-60eaa88bda7b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="deleteEmployee TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="8c860704-69b4-4e43-9a6a-087d36e80457" name="deleteEmployee"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EmployeeManagementServiceSoap12Binding</con:interface><con:operation>deleteEmployee</con:operation><con:request name="deleteEmployee" id="1422c8f7-bf61-4725-ba84-0ab4321ac2de"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <typ:deleteEmployee>\r
+         <!--Optional:-->\r
+         <typ:employeeName>?</typ:employeeName>\r
+      </typ:deleteEmployee>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:deleteEmployee" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e716eca5-cdc5-4e47-9202-6031f07ad63c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getEmployeeDetails TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="92fef2ff-0e37-4fd8-ba1c-8da718789421" name="getEmployeeDetails"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>EmployeeManagementServiceSoap12Binding</con:interface><con:operation>getEmployeeDetails</con:operation><con:request name="getEmployeeDetails" id="67bf695e-5486-4284-b5d9-a670f0dee50d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/axis2/services/EmployeeManagementService.EmployeeManagementServiceHttpSoap12Endpoint/</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <typ:getEmployeeDetails>\r
+         <!--Optional:-->\r
+         <typ:employeeName>${#TestSuite#Name}</typ:employeeName>\r
+      </typ:getEmployeeDetails>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="urn:getEmployeeDetails" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>Name</con:name><con:value>Jim123</con:value></con:property><con:property><con:name>id</con:name><con:value>123</con:value></con:property><con:property><con:name>department</con:name><con:value>mba</con:value></con:property><con:property><con:name>namePropertyTransfer</con:name><con:value/></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>id</con:name><con:value>984</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
